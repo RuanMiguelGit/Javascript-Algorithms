@@ -1,4 +1,3 @@
-Repositório de algoritimos em javascript 
-Status : On going
-
-Javascript-Algorithms
+# Javascript Algorithms
+<li>Repositório de algoritimos em javascript</li>
+<li>Status : On going</li>
