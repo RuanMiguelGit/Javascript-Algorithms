@@ -27,5 +27,10 @@ function spinalCase(str) {
 
     return spinal;
   }
+
+const spinalCase = (str) => {
+    const words = str.split(/[_ A-Z]/).join('-').toLowerCase()
+    return words
+}
   
-  console.log(spinalCase('This Is Spinal Tap'));
+  console.log(spinalCase('ThisIsSpinalTap'));
