@@ -4,7 +4,7 @@ let result = ''
 let hasNoVows = true 
 const firstChar = str[0]
 if(VOEWS.includes(firstChar)){
-    result =  `${str}way`
+    return  `${str}way`
 }
 
 for (const char in str) {
@@ -12,13 +12,27 @@ for (const char in str) {
         hasNoVows = false
         break
     }
+    if (hasNoVows) {
+        return `${str}ay`
+    }
+    
 }
 
-if (hasNoVows) {
-    result = `${str}ay`
-}
 
-    return result
+
+let consoNants = ''
+let firstVowIndex = 0
+
+for(let i= 0 ; i < str.length ; i++) {
+    let firstChar = str[i]
+    if(VOEWS.includes(firstChar) ) {
+        firstVowIndex = i
+        break;
+    } else {
+    consoNants += firstChar
+    }
+    return  str.substring(firstVowIndex) + consoNants + 'ay'
 }
   
-console.log(translatePigLatin("glove"));
+}
+console.log(translatePigLatin("california"));
